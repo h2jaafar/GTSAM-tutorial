@@ -3,6 +3,10 @@ GTSAM hands on session based on the official tutorial
 
 # Installation
 
+Requirements:
+Boost (`sudo apt-get install libboost-all-dev`)
+CMake (`sudo apt-get install cmake`)
+
 Install GTSAM
 ```
 cd ~/
@@ -29,3 +33,13 @@ mkdir build && cd build
 cmake ..
 sudo make install
 ```
+
+## Problems
+If you encounter Eigen problems (although you probably wont)
+Try installing Eigen separately 
+`sudo apt install libeigen3-dev`
+
+
+# References
+This tutorial is basically a modified implementation of the GTSAM documentation tutorial, with added information and explanation.
+Please see the tutorial for the original content [Factor Graphs and GTSAM](https://gtsam.org/tutorials/intro.html)
