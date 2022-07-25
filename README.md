@@ -17,6 +17,7 @@ sudo apt install libgtsam-dev libgtsam-unstable-dev
 ```
 
 
+Or install from source (not recommended atm, takes ~20-30mins)
 GTSAM from Source
 ```
 cd ~/
