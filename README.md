@@ -13,7 +13,7 @@ GTSAM from Ubuntu PPA:
 sudo add-apt-repository ppa:borglab/gtsam-develop
 sudo apt update  # not necessary since Bionic
 # Install:
-sudo apt install libgtsam-dev libgtsam-unstable
+sudo apt install libgtsam-dev libgtsam-unstable-dev
 ```
 
 
