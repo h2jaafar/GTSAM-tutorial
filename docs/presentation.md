@@ -13,17 +13,15 @@ paginate: true
 # Factor Graphs and GTSAM
 - Before we begin, let's build GTSAM (since it takes some time)
 
-**Clone and build GTSAM**
+**Install GTSAM**
+Add PPA
 ```
-mkdir ~/projects/
-git clone https://github.com/borglab/gtsam
-cd gtsam
-git checkout 4.0.3
-mkdir build && cd build
-cmake ..
-sudo make install
-cd ../..
+sudo add-apt-repository ppa:borglab/gtsam-develop
+sudo apt update
 ```
+Install:
+`sudo apt install libgtsam-dev libgtsam-unstable`
+
 ---
 
 ## Factor Graphs

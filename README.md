@@ -7,7 +7,17 @@ Requirements:
 Boost (`sudo apt-get install libboost-all-dev`)
 CMake (`sudo apt-get install cmake`)
 
-Install GTSAM
+GTSAM from Ubuntu PPA:
+```
+# Add PPA
+sudo add-apt-repository ppa:borglab/gtsam-develop
+sudo apt update  # not necessary since Bionic
+# Install:
+sudo apt install libgtsam-dev libgtsam-unstable
+```
+
+
+GTSAM from Source
 ```
 cd ~/
 git clone https://github.com/borglab/gtsam.git
