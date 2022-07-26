@@ -42,7 +42,7 @@ cd ~/projects/hands-on/
 git clone https://github.com/husseinalijaafar/GTSAM-tutorial.git
 mkdir build && cd build
 cmake ..
-sudo make install
+make
 ```
 
 ## Problems

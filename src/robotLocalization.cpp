@@ -62,7 +62,7 @@ using namespace gtsam;
 namespace gtsam{
 
 
-// create a custom class
+// create a custom class for modified unary factor
 class UnaryFactor: public NoiseModelFactor1<Moses3> {
 
   // The factor will hold a measurement consisting of an (X,Y) location
