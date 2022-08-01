@@ -32,3 +32,5 @@
 *.app
 build/
 .vscode/
+docs/.$factor_graph_localization.dtmp
+.gitignore
