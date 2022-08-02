@@ -11,7 +11,14 @@ paginate: true
 ---
 
 # Factor Graphs and GTSAM
-- Before we begin, let's build GTSAM (since it takes some time)
+Hussein Ali Jaafar
+Aug 3, 2022
+
+---
+
+## Getting Started
+
+- Before we begin, let's build GTSAM 
 
 **Install GTSAM**
 Add PPA
@@ -54,7 +61,7 @@ We will demonstrate the use of GTSAM through a few examples
 1. Simple Rotation
 2. Modelling Robot Motion
 3. Robot Localization 
-4. SLAM
+
 
 
 
@@ -173,7 +180,7 @@ Open `robotMotion.cpp` to follow along
 
 ---
 
-// Create an empty nonlinear factor graph
+Create an empty nonlinear factor graph
 ```c++
 NonlinearFactorGraph graph;
 ```
@@ -202,7 +209,7 @@ graph.add(PriorFactor<Pose2>(key_1, priorMean, priorNoise));
 ```
 
 ---
-Create odometry factor values and measurment model
+Create odometry factor values and measurement model
 ```c++
 gtsam::Pose2 odometry(2.0, 0.0, 0.0);
 noiseModel::Diagonal::shared_ptr odometryNoise = 
@@ -306,14 +313,14 @@ x3 covariance:
 ```
 ---
 # Questions so far?
-- We have done examples 1 (sngle unary factor and optimization), and example 2 (multiple binary factors)
+- We have done examples 1 (single unary factor and optimization), and example 2 (multiple binary factors)
 - Next is example 3: Robot Localization
 ---
 
 ## Example 3: Robot Localization
-- The previous example relies on odometry measurments, but they aren't entirely accurate.
-- They also rely on the previous factor, which can lead to error proagation.
-- A more reliable approach is to use unary measurment factors at each continuous variable 
+- The previous example relies on odometry measurements, but they aren't entirely accurate.
+- They also rely on the previous factor, which can lead to error propagation.
+- A more reliable approach is to use unary measurement factors at each continuous variable 
 - This is especially applicable to robot localization
 
 ---
@@ -488,3 +495,11 @@ x3 covariance:
 6.60868131e-14  0.00944444444  0.00305555556
 1.73935528e-13  0.00305555556   0.0181944444
 ```
+
+---
+# Conclusion
+- GTSAM is a very extensible library. This demo is ~20% of the functionality
+- I highly recommend you go through the detailed examples on their repo [Link](https://github.com/devbharat/gtsam/tree/master/examples)
+- There is another example included here that you can build, basically a slam example
+
+Thank you
